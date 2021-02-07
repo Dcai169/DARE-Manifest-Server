@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const app = express();
 const port = process.env.PORT || 80;
 
@@ -15,7 +16,7 @@ app.get('/manifest', (req, res) => {
         locale = 'en';
     }
 
-    res.sendFile(`./manifests/d1/${locale}.json`);
+    res.sendFile(path.join(__dirname, `./manifests/d1/${locale}.json`));
 });
 
 app.listen(port, () => { console.log(`Server running on port ${port}`) });
