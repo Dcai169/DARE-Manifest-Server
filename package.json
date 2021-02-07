@@ -1,0 +1,22 @@
+{
+  "name": "dare-manifest-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dcai169/DARE-Manifest-Server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dcai169/DARE-Manifest-Server/issues"
+  },
+  "homepage": "https://github.com/Dcai169/DARE-Manifest-Server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
