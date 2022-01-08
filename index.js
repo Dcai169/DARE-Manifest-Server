@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
 app.get('/manifest', (req, res) => {
     let locale = req.query.locale;
 
+    if (locale === 'es-mx') {
+        locale = 'es';
+    }
+
     if (!d1_locales.includes(locale)) {
         locale = 'en';
     }
